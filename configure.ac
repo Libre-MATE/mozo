@@ -1,12 +1,11 @@
 dnl -*- Mode: autoconf -*-
 dnl Process this file with autoconf to produce a configure script.
-AC_PREREQ(2.53)
-
 AC_INIT([mozo],
         [1.26.0],
         [https://github.com/Libre-MATE/mozo/issues],
         [mozo],
         [https://github.com/Libre-MATE/mozo/])
+AC_PREREQ(2.53)
 
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 AC_CONFIG_SRCDIR(mozo.in)
