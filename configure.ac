@@ -16,7 +16,6 @@ AM_MAINTAINER_MODE
 dnl put the ACLOCAL flags in the makefile
 ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
 
-
 GETTEXT_PACKAGE=AC_PACKAGE_NAME
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext package])
@@ -24,6 +23,7 @@ AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT_REQUIRE_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
 
+AC_PROG_SED
 AM_PATH_PYTHON(3.5)
 
 PKG_CHECK_MODULES(MOZO, libmate-menu >= 1.21.0 pygobject-3.0)
@@ -41,8 +41,6 @@ AC_CONFIG_FILES([
         Mozo/Makefile
         data/mozo.desktop.in
         data/Makefile
-        data/icons/Makefile
-        ])
-
+        data/icons/Makefile])
 AC_OUTPUT
 

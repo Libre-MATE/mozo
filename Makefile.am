@@ -14,7 +14,7 @@ DISTCHECK_CONFIGURE_FLAGS = \
 	CFLAGS='-Wno-deprecated-declarations'
 
 mozo: mozo.in
-	$(AM_V_GEN)sed -e s!\@PYTHON\@!@PYTHON@!	\
+	$(AM_V_GEN)$(SED) -e s!\@PYTHON\@!@PYTHON@!	\
 	    -e s!\@PYOPTIONS\@!-OOt!			\
 	    < $< > $@
 mozo: Makefile

@@ -5,7 +5,7 @@ app_PYTHON = __init__.py MainWindow.py MenuEditor.py util.py
 nodist_app_PYTHON = config.py
 
 config.py: config.py.in
-	$(AM_V_GEN)sed					\
+	$(AM_V_GEN)$(SED)				\
 		-e s!\@prefix\@!$(prefix)!		\
 		-e s!\@datadir\@!$(datadir)!		\
 		-e s!\@pkgdatadir\@!$(pkgdatadir)!	\
