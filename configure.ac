@@ -6,7 +6,7 @@ AC_INIT([mozo],
         [mozo],
         [https://github.com/Libre-MATE/mozo/])
 AC_PREREQ(2.53)
-
+AC_COPYRIGHT([Copyright (C) 2022 Libre MATE])
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
