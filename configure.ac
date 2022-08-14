@@ -21,10 +21,9 @@ AC_INIT([mozo],
         [https://github.com/Libre-MATE/mozo/])
 AC_PREREQ(2.53)
 AC_COPYRIGHT([Copyright (C) 2022 Libre MATE])
-m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([1.7 dist-xz no-dist-gzip check-news])
+AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip silent-rules check-news])
 AM_MAINTAINER_MODE
 
 dnl put the ACLOCAL flags in the makefile
