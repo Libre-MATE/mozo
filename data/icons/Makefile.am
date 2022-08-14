@@ -20,7 +20,6 @@ noinst_DATA = \
 	$(NULL)
 
 EXTRA_DIST = \
-	meson.build \
 	$(public_icons) \
 	$(private_icons) \
 	$(noinst_DATA) \

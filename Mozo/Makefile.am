@@ -17,8 +17,7 @@ config.py: Makefile
 
 CLEANFILES = config.py
 EXTRA_DIST = \
-	config.py.in \
-	meson.build
+	config.py.in
 
 all-local: config.py
 

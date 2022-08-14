@@ -14,7 +14,6 @@ pkgdata_DATA = mozo.ui
 CLEANFILES = $(desktop_DATA)
 
 EXTRA_DIST = \
-	meson.build \
 	$(pkgdata_DATA) \
 	$(man_MANS)
 
